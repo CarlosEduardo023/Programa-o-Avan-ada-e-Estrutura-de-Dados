@@ -1,0 +1,52 @@
+  // Explorando a classe Math 
+	    
+	    System.out.println ( " 18 elevado ao cubo = " + Math.pow (18,3));
+	    System.out.println ( " raiz quadrada de 1024 = " + Math.sqrt (1024));
+	    mensagem();
+	    }
+
+—------------------------------------------------------------------------------------------------------------------------
+public class Main
+{
+	public static void main(String[] args) {
+	  mensagem();
+	  mensagem("bao");
+	  mensagem("oi " + "fui");
+	}
+	
+	 public static void mensagem ()
+	    {
+	        System.out.println ( "ola");
+	    }
+	 public static void mensagem (String m)
+	 {
+	     System.out.println (m);
+	 }
+
+    public static void mensagem (String a,String b)
+    {
+        System.out.println ( a + " " + b);
+    }
+}
+—------------------------------------------------------------------------------------------------------------------------
+//Classe calculadora
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("a soma de 9 + 9 é = " + soma(9,9));
+		mensagem();
+		potencia(18,3);
+	}
+	public static int soma ( int a, int b)
+	{
+	    return a+b;
+	}
+	public static void mensagem ()
+	{
+	    System.out.println ("ola");
+	}
+	public static void potencia (int a, int b)
+	{
+	    System.out.println (a + " elevado a " + b + " é = " + Math.pow(a,b));
+	}
+}

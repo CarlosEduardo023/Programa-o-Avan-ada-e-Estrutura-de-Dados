@@ -1,0 +1,83 @@
+/******************************************************************************
+
+Carlos - 16/02/23 - calculadora em C
+
+*******************************************************************************/
+#include <stdio.h>
+
+//anotações : 1-- função e módulo(método em C#) são a mesma coisa 2-- funções precisam ter nome, são trechos de código que contém parênteses() com ou sem valor dentro deles, se sim esse o nome deles são parâmetros de entrada(ex: int a, int b) e também pode devolver(return) algum valor
+
+int soma( int a, int b)
+{
+    return a +b;
+}
+int subtracao ( int a, int b)
+{
+    return a - b;
+    
+}
+int prod ( int a , int b)
+{
+    return a * b;
+}
+int divisao ( int a , int b)
+{
+    if (b==0) return 0;
+    return a / b;
+}
+int resto ( int a , int b)
+{
+    return b % a;
+}
+int main()
+{
+    int a = 22, b = 0;
+    // saída
+    printf ("soma = %d",soma(a,b));
+    printf ("\nprod = %d",prod(a,b));
+    printf ("\ndivisao = %d",divisao(a,b));
+    printf ("\nsubtracao = %d",subtracao(a,b));
+    printf ("\nresto = %d", resto(a,b));
+    return 0;
+}
+
+
+
+/******************************************************************************
+
+Calculadora em java
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	int a = 10 , b=2;
+	System.out.println("soma=" + soma (a,b));
+	System.out.println("subtracao= " + sub (a,b));
+	System.out.println("Divisão= " + div (a,b));
+	System.out.println("Multiplicação= " + multi (a,b));
+	System.out.println("Resto = " + resto (a,b));
+	
+	}
+	public static int soma( int a, int b){
+	    return a + b;
+	}
+	public static int sub( int a, int b){
+	    return a - b;
+	}
+	public static int div ( int a, int b){
+	    if (b==0) return 0;
+	    return a /b;
+	}
+	public static int multi ( int a , int b){
+	    return a * b;
+	}
+	public static int resto ( int a , int b){
+	    return b % a;
+	}
+	
+}
+
+
+
+
